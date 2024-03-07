@@ -1,5 +1,3 @@
-package beskidmedia.pl.scanner
-
 class Dice(
     private val max: Int = 6,
     private val count: Int = 1,
@@ -19,8 +17,20 @@ class Dice(
         roll()
     }
 
+    override fun toString(): String {
+        return result.toString()
+    }
+
+    override fun hashCode(): Int {
+        return results.hashCode()
+    }
+
+    override fun equals(other: Any?): Boolean {
+        return this.hashCode() == other.hashCode()
+    }
+
     fun roll() {
-        (1..count).forEach {
+        (0..<count).forEach {
             array[it] = (min..max).random()
         }
         results = results()
