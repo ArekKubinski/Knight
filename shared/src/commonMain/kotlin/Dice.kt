@@ -29,12 +29,14 @@ class Dice(
         return this.hashCode() == other.hashCode()
     }
 
-    fun roll() {
+    fun roll(): Int {
         (0..<count).forEach {
             array[it] = (min..max).random()
         }
         results = results()
         result = result()
+
+        return result
     }
 
     private fun result(): Int =
