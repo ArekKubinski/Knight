@@ -6,6 +6,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import models.Dice
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable

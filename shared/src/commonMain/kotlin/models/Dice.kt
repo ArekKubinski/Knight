@@ -1,3 +1,5 @@
+package models
+
 class Dice(
     private val max: Int = 6,
     private val count: Int = 1,
